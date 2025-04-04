@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+:root {
+  --primary-color: #333333;
+  --secondary-color: #ffffff;
+  --text-dark: #030712;
+  --text-light: #d0d0d0;
+  --extra-light: #ffffff;
+  --white: #ffffff;
+  --max-width: 1400px;
+}
+
+.section__background {
+  width: 100vw;        /* 视窗宽度 */
+  max-width: none;     /* 移除最大宽度限制 */
+  margin: 0;           /* 清除自动居中 */
+  padding: 4rem 3rem;
+  background-color: black;
+  position: relative;  /* 确保元素定位基准正确 */
+  left: 50%;           /* 补偿父容器可能存在的偏移 */
+  transform: translateX(-50%);
+}
+
+.section__container2{
+	max-width: var(--max-width);
+	margin: auto;
+	padding: 4rem 3rem;
+	background-color:black
+}
+
+.section__subheader {
+  font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: var(--text-light);
+  text-align: left;
+}
+
+.section__header {
+  font-size: 2.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: var(--extra-light);
+  text-align: left;
+}
+
+.card__grid {
+  margin-top: 2rem;
+  display: grid;
+  gap: 1rem 0.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-auto-flow: dense;
+}
+
+.card {
+  padding-block: 0 1.5rem;
+  padding-inline: 1.5rem;
+  transition: 0.3s;
+  margin:1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+.card:hover {
+  background-color: var(--primary-color);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.card span {
+  display: inline-block;
+  padding: 6px 14px;
+  font-size: 2rem;
+  color: var(--white);
+  background-color: var(--primary-color);
+  transform: translateY(-50%);
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.card:hover span {
+  color: var(--primary-color);
+  background-color: var(--white);
+}
+
+.card h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--secondary-color);
+  transition: 0.3s;
+}
+
+.card p {
+  color: var(--text-light);
+  line-height: 1.75rem;
+  transition: 0.3s;
+}
+
+.card:hover :is(h4, p) {
+  color: var(--white);
+}
