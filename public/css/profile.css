@@ -1,0 +1,553 @@
+/* profile.css - 完整版本 */
+
+/* ===== 基础重置 ===== */
+.profile-main img,
+.profile-sidebar img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ===== Hero 部分 ===== */
+.profile-hero {
+    background: linear-gradient(135deg, rgba(108, 92, 231, 0.9) 0%, rgba(45, 49, 77, 0.9) 100%), url('../images/hero-bg.jpg') center/cover no-repeat;
+    color: #ffffff;
+    padding: 10rem 2rem 6rem;
+    position: relative;
+    margin-bottom: 4rem;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    line-height: 1.2;
+}
+
+.hero-divider {
+    width: 80px;
+    height: 3px;
+    background: #ffffff;
+    margin: 2rem auto;
+    opacity: 0.8;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    opacity: 0.9;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+}
+
+.hero-scroll {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-20px); }
+    60% { transform: translateY(-10px); }
+}
+
+/* ===== 主布局结构 ===== */
+.profile-layout {
+    max-width: 1400px;
+    margin: 0 auto 4rem;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 3rem;
+}
+
+/* ===== 主要内容区 ===== */
+.profile-main {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.content-section {
+    padding: 3rem;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.content-section:last-child {
+    border-bottom: none;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.section-header h2 {
+    font-size: 2.2rem;
+    color: #2d314d;
+    margin: 0;
+}
+
+.section-icon {
+    font-size: 2rem;
+    color: #6c5ce7;
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    background: rgba(108, 92, 231, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ===== 价值观部分 ===== */
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.value-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 2rem;
+    border: 1px solid #f0f0f0;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(108, 92, 231, 0.1);
+}
+
+.value-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    background: #6c5ce7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.value-card h3 {
+    color: #2d314d;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+/* ===== 职业发展部分 ===== */
+.roadmap-container {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.roadmap-phase {
+    position: relative;
+    padding: 2rem 0;
+}
+
+.phase-timeline {
+    position: absolute;
+    left: -2rem;
+    top: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timeline-dot {
+    width: 20px;
+    height: 20px;
+    background: #6c5ce7;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(108, 92, 231, 0.3);
+}
+
+.timeline-line {
+    width: 2px;
+    flex-grow: 1;
+    background: #e0e0e0;
+    margin: 1rem 0;
+}
+
+.phase-content {
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 2rem;
+    position: relative;
+}
+
+.phase-content h3 {
+    color: #2d314d;
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.phase-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.phase-list li {
+    padding: 0.8rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    border-bottom: 1px solid #eee;
+}
+
+.phase-list li:last-child {
+    border-bottom: none;
+}
+
+.phase-list .fa-check {
+    color: #6c5ce7;
+}
+
+/* ===== 兴趣爱好部分 ===== */
+.hobbies-carousel {
+    display: flex;
+    gap: 2rem;
+    overflow-x: auto;
+    padding-bottom: 1rem;
+    scrollbar-width: thin;
+    scrollbar-color: #6c5ce7 #f0f0f0;
+}
+
+.hobbies-carousel::-webkit-scrollbar {
+    height: 6px;
+}
+
+.hobbies-carousel::-webkit-scrollbar-track {
+    background: #f0f0f0;
+}
+
+.hobbies-carousel::-webkit-scrollbar-thumb {
+    background: #6c5ce7;
+    border-radius: 4px;
+}
+
+.hobby-card {
+    min-width: 300px;
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.hobby-media {
+    position: relative;
+    height: 200px;
+}
+
+.hobby-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hobby-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
+    display: flex;
+    align-items: flex-end;
+    padding: 1.5rem;
+    color: #ffffff;
+}
+
+.hobby-overlay i {
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+.hobby-card h3 {
+    color: #2d314d;
+    margin: 1.5rem 1.5rem 1rem;
+}
+
+.hobby-card p {
+    margin: 0 1.5rem 1.5rem;
+    color: #666666;
+}
+
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.blog-post {
+    background: #f8f9fa;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.blog-post iframe{
+	height: 215px;
+    width: 100%;
+    object-fit: cover;
+}
+.blog-post:hover {
+    transform: translateY(-5px);
+}
+
+.post-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 1.5rem 0;
+    font-size: 0.9rem;
+    color: #666666;
+}
+
+.post-category {
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+.post-category.dev {
+    background: rgba(108, 92, 231, 0.1);
+    color: #6c5ce7;
+    margin-bottom: 1rem;
+}
+
+.post-thumbnail {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.post-content {
+    padding: 1.5rem;
+}
+
+.post-content h3 {
+    color: #2d314d;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.post-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #6c5ce7;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
+.post-link:hover {
+    text-decoration: underline;
+}
+
+/* ===== 侧边栏 ===== */
+.profile-sidebar {
+    position: sticky;
+    top: 2rem;
+    align-self: start;
+}
+
+.sidebar-widget {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.widget-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.widget-header h3 {
+    color: #2d314d;
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+.widget-header i {
+    font-size: 1.5rem;
+    color: #6c5ce7;
+}
+
+.contact-form .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-input {
+    width: 100%;
+    padding: 0.8rem 1.2rem;
+    border: 2px solid #eeeeee;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-input:focus {
+    border-color: #6c5ce7;
+    box-shadow: 0 0 0 3px rgba(108, 92, 231, 0.2);
+    outline: none;
+}
+
+.form-button {
+    width: 100%;
+    padding: 1rem;
+    background: #6c5ce7;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.form-button:hover {
+    opacity: 0.9;
+}
+
+.contact-info {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid #eeeeee;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    color: #666666;
+}
+
+.info-item i {
+    width: 24px;
+    text-align: center;
+    color: #6c5ce7;
+}
+
+.platform-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 0.8rem;
+}
+
+@media (max-width: 1200px) {
+    .profile-layout {
+        grid-template-columns: 1fr;
+        padding: 0 1.5rem;
+    }
+
+    .profile-sidebar {
+        position: static;
+        grid-column: 1 / -1;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .content-section {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .section-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .profile-sidebar {
+        grid-template-columns: 1fr;
+    }
+
+    .hobbies-carousel {
+        scroll-snap-type: x mandatory;
+    }
+
+    .hobby-card {
+        min-width: 85%;
+        scroll-snap-align: start;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-hero {
+        padding: 8rem 1.5rem 4rem;
+        clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .section-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+
+    .content-section {
+        padding: 1.5rem;
+    }
+
+    .form-button {
+        padding: 0.8rem;
+    }
+}
