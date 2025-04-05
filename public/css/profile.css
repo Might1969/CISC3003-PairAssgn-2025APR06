@@ -1,6 +1,4 @@
-/* profile.css - 完整版本 */
 
-/* ===== 基础重置 ===== */
 .profile-main img,
 .profile-sidebar img {
     max-width: 100%;
@@ -8,7 +6,7 @@
     display: block;
 }
 
-/* ===== Hero 部分 ===== */
+
 .profile-hero {
     background: linear-gradient(135deg, rgba(108, 92, 231, 0.9) 0%, rgba(45, 49, 77, 0.9) 100%), url('../images/hero-bg.jpg') center/cover no-repeat;
     color: #ffffff;
@@ -71,7 +69,7 @@
     60% { transform: translateY(-10px); }
 }
 
-/* ===== 主布局结构 ===== */
+
 .profile-layout {
     max-width: 1400px;
     margin: 0 auto 4rem;
@@ -81,7 +79,7 @@
     gap: 3rem;
 }
 
-/* ===== 主要内容区 ===== */
+
 .profile-main {
     background: #ffffff;
     border-radius: 16px;
@@ -122,7 +120,7 @@
     justify-content: center;
 }
 
-/* ===== 价值观部分 ===== */
+
 .values-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -161,7 +159,7 @@
     font-size: 1.3rem;
 }
 
-/* ===== 职业发展部分 ===== */
+
 .roadmap-container {
     position: relative;
     padding-left: 2rem;
@@ -233,7 +231,7 @@
     color: #6c5ce7;
 }
 
-/* ===== 兴趣爱好部分 ===== */
+
 .hobbies-carousel {
     display: flex;
     gap: 2rem;
@@ -377,7 +375,7 @@
     text-decoration: underline;
 }
 
-/* ===== 侧边栏 ===== */
+
 .profile-sidebar {
     position: sticky;
     top: 2rem;
