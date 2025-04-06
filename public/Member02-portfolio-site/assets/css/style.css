@@ -303,7 +303,6 @@ input {
 
 /*=============== Home ===============*/
 .home {
-  background: url(../img/home-bg.png);
   background-size: cover;
   background-position: 50%;
   padding-top: 5.5rem;
@@ -332,7 +331,7 @@ input {
 }
 
 .home__img {
-  width: 90%;
+  width: 80%;
   height: 380px;
   object-fit: cover;
   border-radius: 0.3rem;
@@ -389,8 +388,8 @@ input {
 }
 
 .about-card{
-	background-color: var(--surface-container-low);
-	color: var(--on-surface-varient);
+
+	color: var(--on-surface);
 	margin-inline: 16px;
 	padding: 16px;
 	margin-block-start: 24px;
@@ -404,6 +403,7 @@ input {
 }
 
 .about-list{
+	margin: 10px 2px;
 	display: grid;
 	gap: 12px;
 }
