@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+       href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" 
+       rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/profile.css" />
+    <link rel="stylesheet" href="css/showcase.css" />
+
+    <title>Frontend Mentor | Easybank landing page</title>
+  </head>
+  <body>
+<header class="header">
+  <div class="overlay has-fade"></div>
+
+  <nav class="container container--pall flex flex-jc-sb flex-ai-c">
+    <a id="btnHamburger" href="#" class="header__toggle hide-for-desktop">
+      <span></span>
+      <span></span>
+      <span></span>
+    </a>
+
+    <div class="header__links hide-for-mobile">
+      <a href="cisc3003-PairAssgn-home.html">Home</a>
+      <a href="cisc3003-PairAssgn-Profile.html">Profile</a>
+      <a href="#">Summary</a>
+      <a href="#" class="action">Showcase</a>
+      <a href="#">Qualification</a>
+    </div>
+
+    <a href="cisc3003-PairAssgn-choose.html" class="button header__cta hide-for-mobile"
+      >Personal Portfolio Page</a
+    >
+  </nav>
+
+  <div class="header__menu has-fade">
+    <a href="cisc3003-PairAssgn-home.html">Home</a>
+    <a href="">Profile</a>
+    <a href="">Summary</a>
+    <a href="" class="action">Showcase</a>
+    <a href="">Qualification</a>
+    <a href="cisc3003-PairAssgn-choose.html">Portfolio Page</a>
+  </div>
+</header>
+
+    <main class="showcase-main">
+        <section class="profile-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Our Tremendous Work</h1>
+            <div class="hero-divider"></div>
+            <p class="hero-subtitle">"Journey through our digital excellence: Innovative Portfolio Projects showcasing cutting-edge solutions, 
+Measurable Accomplishments highlighting industry recognition, and Tailored Business Offers designed for your success. 
+Three pillars demonstrating how aesthetic precision meets operational excellence in every client engagement."</p>
+            <div class="hero-scroll">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+        </section>
+
+        <section class="portfolio-showcase">
+        <h1>Our Portfolios</h1>
+            <div class="filter-controls">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="easybank">Easy Bank</button>
+                <button class="filter-btn" data-filter="redstore">Red Store</button>
+                <button class="filter-btn" data-filter="pfp">PortFolio Projects</button>
+            </div>
+
+            <div class="project-grid">
+              <article class="project-card">
+        <a href="cisc3003-project-demo01.html" class="project-link" data-category="easybank">
+            <div class="project-media">
+                <img src="images/demo1-intro.png" alt="Project 01">
+                <div class="project-overlay">
+                    <span class="view-details">View Web Page</span>
+                </div>
+            </div>
+            <div class="project-content">
+                <h3>E-comerce Website</h3>
+                <div class="project-meta">
+                    <span class="date">2025 Q1</span>
+                </div>
+            </div>
+        </a>
+    </article>
+    
+    <article class="project-card">
+        <a href="cisc3003-project-demo02.html" class="project-link" data-category="redstore">
+            <div class="project-media">
+                <img src="images/demo2-intro.png" alt="Project 02">
+                <div class="project-overlay">
+                    <span class="view-details">View Web Page</span>
+                </div>
+            </div>
+            <div class="project-content">
+                <h3>Red Store - Part 1</h3>
+                
+                <div class="project-meta">
+
+                    <span class="date">2025 Q1</span>
+                </div>
+            </div>
+        </a>
+    </article>
+    
+    <article class="project-card">
+        <a href="cisc3003-project-demo03.html" class="project-link" data-category="redstore">
+            <div class="project-media">
+                <img src="images/demo3-intro.png" alt="Project 03">
+                <div class="project-overlay">
+                    <span class="view-details">View Web Page</span>
+                </div>
+            </div>
+            <div class="project-content">
+                <h3>Red Store - Part 2</h3>
+                
+                <div class="project-meta">
+
+                    <span class="date">2025 Q1</span>
+                </div>
+            </div>
+        </a>
+    </article>
+    
+     <article class="project-card">
+        <a href="cisc3003-project-demo04.html" class="project-link" data-category="redstore">
+            <div class="project-media">
+                <img src="images/demo4-intro.png" alt="Project 04">
+                <div class="project-overlay">
+                    <span class="view-details">View Web Page</span>
+                </div>
+            </div>
+            <div class="project-content">
+                <h3>Red Store - Part 3</h3>
+               
+              
+                <div class="project-meta">
+
+                    <span class="date">2025 Q1</span>
+                </div>
+            </div>
+        </a>
+    </article>
+    
+    <article class="project-card">
+        <a href="Member01-portfolio-site/Member01-home.html" class="project-link" data-category="pfp">
+            <div class="project-media">
+                <img src="images/demo5-intro.png" alt="Project 05">
+                <div class="project-overlay">
+                    <span class="view-details">View Web Page</span>
+                </div>
+            </div>
+            <div class="project-content">
+                <h3>Personal Portfolio Page</h3>
+                
+                <div class="project-meta">
+
+                    <span class="date">2025 Q2</span>
+                </div>
+            </div>
+        </a>
+    </article>
+    
+ </div>
+</section>
+
+<!-- Add this between the portfolio-showcase and business-offers sections -->
+<section class="accomplishments-section">
+    <div class="section-header">
+        <h2>Measurable Success</h2>
+        <p class="section-subtitle">Quantifying our impact through tangible results</p>
+    </div>
+
+    <div class="accomplishments-grid">
+        <div class="accomplishment-card">
+            <div class="accomplishment-icon">
+                <i class="ri-user-5-fill"></i>
+            </div>
+            <h3>500+</h3>
+            <p>Satisfied Enterprise Clients</p>
+            <div class="accomplishment-bar">
+                <div class="bar-fill" style="width: 90%"></div>
+            </div>
+        </div>
+
+        <div class="accomplishment-card highlighted">
+            <div class="accomplishment-icon">
+                <i class="ri-rocket-2-fill"></i>
+            </div>
+            <h3>2.4x</h3>
+            <p>Average ROI Improvement</p>
+            <div class="accomplishment-bar">
+                <div class="bar-fill" style="width: 100%"></div>
+            </div>
+        </div>
+
+        <div class="accomplishment-card">
+            <div class="accomplishment-icon">
+                <i class="ri-global-fill"></i>
+            </div>
+            <h3>1M+</h3>
+            <p>Daily Digital Interactions Managed</p>
+            <div class="accomplishment-bar">
+                <div class="bar-fill" style="width: 85%"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Business Offers Section -->
+<section class="business-offers">
+    <div class="section-header">
+        <h2>Business Offers</h2>
+    </div>
+
+    <div class="pricing-tiers">
+        <div class="price-card">
+            <div class="card-header">
+                <h3>Startup Accelerator</h3>
+                <div class="price-wrapper">
+                    <span class="price-currency">$</span>
+                    <span class="price">9,999</span>
+                    <span class="price-period">/month</span>
+                </div>
+                <p class="package-description">Essential tools for rapid growth</p>
+            </div>
+            <ul class="features">
+                <li><i class="ri-checkbox-circle-fill"></i> Core feature suite</li>
+                <li><i class="ri-checkbox-circle-fill"></i> 20h technical support</li>
+                <li><i class="ri-checkbox-circle-fill"></i> Standard analytics</li>
+                <li><i class="ri-checkbox-circle-fill"></i> Basic SLA</li>
+            </ul>
+            <button class="cta-button">
+                Start Journey
+                <i class="ri-arrow-right-line"></i>
+            </button>
+        </div>
+
+        <div class="price-card recommended">
+            <div class="recommended-badge">Most Popular</div>
+            <div class="card-header">
+                <h3>Enterprise Suite</h3>
+                <div class="price-wrapper">
+                    <span class="price-currency">$</span>
+                    <span class="price">29,999</span>
+                    <span class="price-period">/month</span>
+                </div>
+                <p class="package-description">Complete digital transformation</p>
+            </div>
+            <ul class="features">
+                <li><i class="ri-checkbox-circle-fill"></i> Premium features</li>
+                <li><i class="ri-checkbox-circle-fill"></i> 24/7 priority support</li>
+                <li><i class="ri-checkbox-circle-fill"></i> Advanced analytics</li>
+                <li><i class="ri-checkbox-circle-fill"></i> Dedicated manager</li>
+                <li><i class="ri-checkbox-circle-fill"></i> Gold SLA</li>
+            </ul>
+            <button class="cta-button">
+                Optimize Now
+                <i class="ri-arrow-right-line"></i>
+            </button>
+        </div>
+
+        <div class="price-card">
+            <div class="card-header">
+                <h3>Custom Solution</h3>
+                <div class="price-wrapper">
+                    <span class="price-currency">$</span>
+                    <span class="price">Custom</span>
+                </div>
+                <p class="package-description">Bespoke enterprise solutions</p>
+            </div>
+            <ul class="features">
+                <li><i class="ri-checkbox-circle-fill"></i> Tailored development</li>
+                <li><i class="ri-checkbox-circle-fill"></i> Private deployment</li>
+                <li><i class="ri-checkbox-circle-fill"></i> Custom training</li>
+                <li><i class="ri-checkbox-circle-fill"></i> Enterprise SLA</li>
+            </ul>
+            <button class="cta-button">
+                Consult Experts
+                <i class="ri-arrow-right-line"></i>
+            </button>
+        </div>
+    </div>
+    
+</section>
+</main>
+
+
+    <footer class="footer">
+      <div class="container">
+        
+        <div class="footer__socials">
+              <a
+                href="https://github.com/"
+                target="_blank"
+                class="footer__social-link"
+              >
+                <i class="ri-github-fill"></i>
+              </a>
+              <a
+                href="assets/img/wechat.jpg"
+                target="_blank"
+                class="footer__social-link"
+              >
+                <i class="ri-wechat-fill"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                class="footer__social-link"
+              >
+                <i class="ri-linkedin-box-fill"></i>
+              </a>
+              <a
+                href="https://x.com/"
+                target="_blank"
+                class="footer__social-link"
+              >
+                <i class="ri-twitter-x-line"></i>
+              </a>
+            </div>
+
+        <div class="footer__links col1">
+          <a href="#">About Us</a>
+          <a href="#">Contact</a>
+          <a href="#">Blog</a>
+        </div>
+
+        <div class="footer__links col2">
+          <a href="#">Careers</a>
+          <a href="#">Support</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+
+
+
+        <div class="footer__copyright">
+          &copy; Company XXX. All Rights Reserved.
+        </div>
+      </div>
+      <div class="attribution">
+        Created by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >CISC3003 Web Programming</a
+        >. - 2025: <a href="#"> DC228265 Guan Zihan</a>.
+      </div>
+    </footer>
+    <script src="js/showcase.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
